@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<link th:href="@{/styles/main.css}" rel="stylesheet"  />
+ 
+</head>
+
+<body>
+	<div th:fragment ="header">
+	<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fgearvn.com%2F&psig=AOvVaw1IqMYMM2otTolRS3_M2L0g&ust=1668497692434000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLjc6bOUrfsCFQAAAAAdAAAAABAE"></img>
+	
+	
+	<h1>Cửa Hàng Máy Tính</h1>
+		<ul>
+			<li><a th:href="@{/admin/category/search}" >Category</a></li>
+			<li><a th:href="@{/product/search}" >Product</a></li>
+			<li><a th:href="@{/admin/user/search}" >User</a></li>			
+			<li><a th:href="@{/admin/userrole/search}" >User Role</a></li>
+			<li><a th:href="@{/admin/bill/search}" >Bill</a></li>			
+			<li><a th:href="@{/admin/billitem/search}" >Bill Item</a></li>
+			
+			
+		</ul>
+	</div>
+
+</body>
+</html>
